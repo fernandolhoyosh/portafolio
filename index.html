@@ -1,24 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
     <link rel="stylesheet" href="css/styles.css">
-    <title>Mi Portafolio</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="">Sobre mí</a></li>
-                <li><a href="">Habilidades</a></li>
-                <li><a href="">Aficiones</a></li>
-                <li><a href="">Formación</a></li>
-                <li><a href="">Proyectos</a></li>
-                <li><a href="">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <main class="main-container">
+    <nav>
+        <ul>
+            <li><a href="#acerca-de-mi">Acerca de mí</a></li>
+            <li><a href="#presentacion">Presentación</a></li>
+            <li><a href="#skills-hobbies">Skills y Hobbies</a></li>
+            <li><a href="#formacion">Formación</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="acerca-de-mi">
+        <h2>Acerca de mí</h2>
+        <p>Soy un desarrollador web con experiencia en la creación de aplicaciones modernas y eficientes. Mi trayectoria incluye trabajar en diversos proyectos que abarcan desde sitios web personales hasta aplicaciones empresariales complejas.</p>
+    </section>
+
+    <section id="presentacion">
+        <h2>Presentación</h2>
+        <div class="container">
+            <div class="item profile-img"></div>
+            <div class="item banner-img"></div>
+            <div class="item">
+                <h3>Redes Sociales</h3>
+                <p>Twitter: @ejemplo</p>
+                <p>LinkedIn: linkedin.com/in/ejemplo</p>
+            </div>
+            <div class="item">
+                <h3>Datos Personales</h3>
+                <p>Nombre: Juan Pérez</p>
+                <p>Edad: 30</p>
+                <p>Nacionalidad: Colombiano</p>
+                <p>Biografía: Desarrollador apasionado por la tecnología.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills-hobbies">
+        <h2>Skills y Hobbies</h2>
+        <div class="container">
+            <div class="item">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Lectura</li>
+                    <li>Ciclismo</li>
+                    <li>Fotografía</li>
+                    <li>Viajar</li>
+                    <li>Cocinar</li>
+                    <li>Videojuegos</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="formacion">
+        <h2>Formación</h2>
+        <div class="container">
+            <div class="item formacion">
+                <div class="academia1"></div>
+                <p>Academia 1 - 2020</p>
+            </div>
+            <div class="item formacion">
+                <div class="academia2"></div>
+                <p>Academia 2 - 2019</p>
+            </div>
+            <div class="item formacion">
+                <div class="academia3"></div>
+                <p>Academia 3 - 2018</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="container">
+            <div class="item proyectos">
+                <div class="proyecto1"></div>
+                <h3>Proyecto 1</h3>
+                <button onclick="window.location.href='https://github.com/usuario/proyecto1'">Ver en GitHub</button>
+                <button onclick="window.location.href='https://proyecto1.demo'">Ver Demo</button>
+            </div>
+            <div class="item proyectos">
+                <div class="proyecto2"></div>
+                <h3>Proyecto 2</h3>
+                <button onclick="window.location.href='https://github.com/usuario/proyecto2'">Ver en GitHub</button>
+                <button onclick="window.location.href='https://proyecto2.demo'">Ver Demo</button>
+            </div>
+            <div class="item proyectos">
+                <div class="proyecto3"></div>
+                <h3>Proyecto 3</h3>
+                <button onclick="window.location.href='https://github.com/usuario/proyecto3'">Ver en GitHub</button>
+                <button onclick="window.location.href='https://proyecto3.demo'">Ver Demo</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form class="contact-form">
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="email" name="correo" placeholder="Correo">
+            <input type="text" name="tema" placeholder="Tema">
+            <textarea name="mensaje" placeholder="Mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</main>
+    <script src="js/app.js"></script>
 </body>
-<script src="js/app.js"></script>
 </html>

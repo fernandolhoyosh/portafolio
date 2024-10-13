@@ -8,9 +8,9 @@
 </head>
 <body>
     <main class="main-container">
-    <nav>
-        <ul>
-            <li><a href="#acerca-de-mi">Acerca de mí</a></li>
+    <nav class="menu__navegacion">
+        <ul class="menu__navegacion__items">
+            <li><a href="#acerca-de-mi">Sobre mí</a></li>
             <li><a href="#presentacion">Presentación</a></li>
             <li><a href="#skills-hobbies">Skills y Hobbies</a></li>
             <li><a href="#formacion">Formación</a></li>
@@ -19,29 +19,42 @@
         </ul>
     </nav>
 
-    <section id="acerca-de-mi">
-        <h2>Acerca de mí</h2>
-        <p>Soy un desarrollador web con experiencia en la creación de aplicaciones modernas y eficientes. Mi trayectoria incluye trabajar en diversos proyectos que abarcan desde sitios web personales hasta aplicaciones empresariales complejas.</p>
-    </section>
-
     <section id="presentacion">
         <h2>Presentación</h2>
-        <div class="container">
-            <div class="item profile-img"></div>
-            <div class="item banner-img"></div>
+        <div class="presentacion__container">
+            <div class="item-presentacion banner-img"></div>
+            <div class="item-presentacion profile-img"></div>
             <div class="item">
-                <h3>Redes Sociales</h3>
-                <p>Twitter: @ejemplo</p>
-                <p>LinkedIn: linkedin.com/in/ejemplo</p>
-            </div>
-            <div class="item">
-                <h3>Datos Personales</h3>
-                <p>Nombre: Juan Pérez</p>
-                <p>Edad: 30</p>
+                <h1>Hola, Mi nombre es Fernando Hoyos y construyo páginas web</h1>
+                <p>Nombre: Fernando Luis Hoyos Hernandez</p>
+                <p>Edad: 28</p>
                 <p>Nacionalidad: Colombiano</p>
-                <p>Biografía: Desarrollador apasionado por la tecnología.</p>
+                <p>Biografía:Soy un Desarrollador web apasionado por la tecnología con conocimientos solidos en HTML, CSS, Javascript, React, Node.js, PHP, SQL, Mongodb, JWT, Express. Me gusta aprender, viajar. conocer lugares, ver peliculas y jugar algunos videojuegos. Actualmente me encuentro participando en el proyecto Oracle ONE en Alura Latam.</p>
+                <h3>Redes Sociales</h3>
+                <div class="presentacion__container__iconos">
+                    <a href="https://github.com/fernandolhoyosh" target="_blank"><img class="iconos-redes-sociales" src="assets/icon-github.png"></a>
+                    <a href="https://www.linkedin.com/in/fernandolhoyosh/" target="_blank"><img class="iconos-redes-sociales" src="assets/icon-linkedin.png"></a>
+                    <a href="https://www.instagram.com/fernandolhoyosh/" target="_blank"><img class="iconos-redes-sociales" src="assets/icon-instagram.png"></a>
+                    <a href="https://x.com/fernandolhoyosh" target="_blank"><img class="iconos-redes-sociales" src="assets/icon-x.png"></a>
+                </div>
+                <button id="btn-curriculo">Curriculo</button>
             </div>
         </div>
+    </section>
+
+    <section id="acerca-de-mi">
+        <h2>Acerca de mí</h2>
+        <p>
+            Ingeniero de software con certificación en desarrollo Full Stack. Experiencia y conocimientos en procesos de soporte de aplicativos (hardware y software) y en el desarrollo de proyectos web utilizando tecnologías como HTML, CSS, JavaScript, PHP, React, Node.js, Microservicios, API y bases de datos como MySQL y MongoDB. Mi experiencia abarca desde la creación de interfaces de usuario atractivas y construcción de APIs. Alta capacidad para el trabajo en equipo, resolución de problemas técnicos, orientación de resultados y a la calidad en cada proyecto.
+        </p>
+        <p>
+            Mi constante deseo de aprender y mantenerme actualizado en las últimas tecnologías me permite abordar desafíos con soluciones innovadoras. Me entusiasman los retos y aportar mi pasión y experiencia para impulsar el éxito en proyectos emocionantes.
+        </p>
+        <p>
+            Lo que me gusta hacer en tiempos libre es viajar en moto, jugar futbol, ver peliculas y a veces algunos video juegos.
+        </p>
+            
+            
     </section>
 
     <section id="skills-hobbies">
@@ -49,24 +62,25 @@
         <div class="container">
             <div class="item">
                 <h3>Skills</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Python</li>
+                <ul class="skills-container">
+                    <li><img src="assets/skills-hobbies/html-5.png" class="skills-imagenes"><p>HTML</p></li>
+                    <li><img src="assets/skills-hobbies/css-3.png" class="skills-imagenes"><p>CSS</p></li>
+                    <li><img src="assets/skills-hobbies/js.png" class="skills-imagenes"><p>Javascript</p></li>
+                    <li><img src="assets/skills-hobbies/react.png" class="skills-imagenes"><p>React</p></li>
+                    <li><img src="assets/skills-hobbies/nodejs.png" class="skills-imagenes"><p>Node</p></li>
+                    <li><img src="assets/skills-hobbies/sql.png" class="skills-imagenes"><p>SQL</p></li>
+                    <li><img src="assets/skills-hobbies/mongodb.png" class="skills-imagenes"><p>MongoDB</p></li>
                 </ul>
             </div>
             <div class="item">
                 <h3>Hobbies</h3>
-                <ul>
-                    <li>Lectura</li>
-                    <li>Ciclismo</li>
-                    <li>Fotografía</li>
-                    <li>Viajar</li>
-                    <li>Cocinar</li>
-                    <li>Videojuegos</li>
+                <ul class="skills-container">
+                    <li><img src="assets/skills-hobbies/futbol.png" class="skills-imagenes"><p>Futbol</p></li>
+                    <li><img src="assets/skills-hobbies/playa.png" class="skills-imagenes"><p>Playa</p></li>
+                    <li><img src="assets/skills-hobbies/viajar2.png" class="skills-imagenes"><p>Viajar</p></li>
+                    <li><img src="assets/skills-hobbies/pelicula.png" class="skills-imagenes"><p>Peliculas</p></li>
+                    <li><img src="assets/skills-hobbies/tecnologia.png" class="skills-imagenes"><p>Tecnología</p></li>
+                    <li><img src="assets/skills-hobbies/videojuegos.png" class="skills-imagenes"><p>Videojuegos</p></li>
                 </ul>
             </div>
         </div>

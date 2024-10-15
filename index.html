@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <main class="main-container">
+
+    <button class="btn-menu-flotante">☰</button>
+
     <nav class="menu__navegacion">
         <ul class="menu__navegacion__items">
             <li><a href="#acerca-de-mi">Sobre mí</a></li>
@@ -18,6 +20,7 @@
         </ul>
     </nav>
 
+    <main class="main-container">
     <section id="presentacion">
         <div class="presentacion__container">
             <div class="item-presentacion banner-img"></div>
@@ -27,7 +30,7 @@
                 <p>Nombre: Fernando Luis Hoyos Hernandez</p>
                 <p>Edad: 28</p>
                 <p>Nacionalidad: Colombiano</p>
-                <p>Biografía:Soy un Desarrollador web apasionado por la tecnología con conocimientos solidos en HTML, CSS, Javascript, React, Node.js, PHP, SQL, Mongodb, JWT, Express. Me gusta aprender, viajar. conocer lugares, ver peliculas y jugar algunos videojuegos. Actualmente me encuentro participando en el proyecto Oracle ONE en Alura Latam.</p>
+                <p>Biografía: Soy un Desarrollador web apasionado por la tecnología con conocimientos solidos en HTML, CSS, Javascript, React, Node.js, PHP, SQL, Mongodb, JWT, Express. Me gusta aprender, viajar. conocer lugares, ver peliculas y jugar algunos videojuegos. Actualmente me encuentro participando en el proyecto Oracle ONE en Alura Latam.</p>
                 <h3>Redes Sociales</h3>
                 <div class="presentacion__container__iconos">
                     <a href="https://github.com/fernandolhoyosh" target="_blank"><img class="iconos-redes-sociales" src="assets/icon-github.png"></a>
@@ -35,7 +38,7 @@
                     <a href="https://www.instagram.com/fernandolhoyosh/" target="_blank"><img class="iconos-redes-sociales" src="assets/icon-instagram.png"></a>
                     <a href="https://x.com/fernandolhoyosh" target="_blank"><img class="iconos-redes-sociales" src="assets/icon-x.png"></a>
                 </div>
-                <button id="btn-curriculo">Curriculo</button>
+                <a href="docs/CV_Fernando_Hoyos.pdf" target="_blank"><button id="btn-curriculo">Curriculo</button></a>           
             </div>
         </div>
     </section>
@@ -165,15 +168,43 @@
 
     <section id="contacto">
         <h2>Contacto</h2>
-        <form class="contact-form">
-            <input type="text" name="nombre" placeholder="Nombre">
-            <input type="email" name="correo" placeholder="Correo">
-            <input type="text" name="tema" placeholder="Tema">
-            <textarea name="mensaje" placeholder="Mensaje"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+        <p>
+            ¿Quieres contactarme?
+            Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.
+        </p>
+        <div class="contenedor-contacto">
+            <img class="contacto-imagen" src="">
+            <form class="contact-form">
+                <input type="text" id="input-nombre" name="nombre" placeholder="Nombre">
+                <span id="errorNombre" class="error"></span>
+
+                <input type="email" id="input-email" name="correo" placeholder="Correo">
+                <span id="errorEmail" class="error"></span>
+
+                <input type="text" id="input-asunto" name="asunto" placeholder="Asunto">
+                <span id="errorAsunto" class="error"></span>
+
+                <textarea id="textarea-mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                <span id="errorMensaje" class="error"></span>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
     </section>
+    <button class="btn-ir-arriba">↑</button>
 </main>
+<footer>
+    <h4>Fernando Luis Hoyos Hernandez</h4>
+    <p>👨🏻‍💻 Desarrollador Web</p>
+    <p>✉️ fernandolhoyosh@gmail.com</p>
+    <div class="presentacion__container__iconos">
+        <a href="https://github.com/fernandolhoyosh" target="_blank"><img class="iconos-redes-footer" src="assets/icon-github.png"></a>
+        <a href="https://www.linkedin.com/in/fernandolhoyosh/" target="_blank"><img class="iconos-redes-footer" src="assets/icon-linkedin.png"></a>
+        <a href="https://www.instagram.com/fernandolhoyosh/" target="_blank"><img class="iconos-redes-footer" src="assets/icon-instagram.png"></a>
+        <a href="https://x.com/fernandolhoyosh" target="_blank"><img class="iconos-redes-footer" src="assets/icon-x.png"></a>
+    </div>
+    <p>© 2024</p>
+</footer>
     <script src="js/app.js"></script>
 </body>
 </html>

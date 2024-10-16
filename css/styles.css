@@ -367,6 +367,16 @@ footer h4, p {
         align-items: flex-end;
     } */
 
+    /* AJUSTAR PADDING PARA VERSION MOVIL */
+
+    #presentacion, #acerca-de-mi, #skills-hobbies, #formacion, #proyectos {
+        padding: .1em;
+    }
+
+    #acerca-de-mi p {
+        padding: .5rem;
+    }
+
     .menu__navegacion {
         display: flex;
         position: fixed;

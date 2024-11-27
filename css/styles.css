@@ -155,9 +155,11 @@ section.visible {
 }
 
 .container {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
 
 .item {
@@ -283,6 +285,9 @@ section.visible {
 }
 .proyecto4 {
     background-image: url('../assets/proyectos/curriculo.png');
+}
+.proyecto5 {
+    background-image: url('../assets/proyectos/alurageek.png');
 }
 
 .contenedor-contacto {
@@ -435,6 +440,12 @@ footer h4, p {
     
 }
 
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
 @media (max-width: 368px) { 
 
     .menu__navegacion {
@@ -457,5 +468,9 @@ footer h4, p {
 
     .contact-form button {
         width: auto;
+    }
+
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 }

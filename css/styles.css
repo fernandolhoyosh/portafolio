@@ -289,6 +289,9 @@ section.visible {
 .proyecto5 {
     background-image: url('../assets/proyectos/alurageek.png');
 }
+.proyecto6 {
+    background-image: url('../assets/proyectos/spaceapp.png');
+}
 
 .contenedor-contacto {
     display: flex;
